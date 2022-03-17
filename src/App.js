@@ -11,7 +11,7 @@ function App() {
 	useEffect(() => {
 		let temp = 0;
 		for(let i = 0; i < income.length; i++) {
-			temp += parseInt(income[i].price);
+			temp += parseFloat(income[i].price);
 		}
 		setTotalIncome(temp);
 	}, [income]);
